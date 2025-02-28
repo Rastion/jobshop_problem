@@ -3,11 +3,14 @@
     "default_params": {
       "instance_file": "instances/ft06.txt"
     },
-    "problem_type": "Job Shop Scheduling",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Job shop scheduling problem",
     "description": "A set of jobs must be processed on every machine of the shop. Each job consists of an ordered sequence of tasks (activities), one per machine. For each job, a processing order (a permutation of machines) is specified, and each task has a given processing time. In addition to precedence constraints (a job’s tasks must follow its specified order), disjunctive resource constraints ensure that each machine processes only one task at a time. The goal is to find, for each machine, a sequence of jobs that minimizes the makespan (the time when all jobs have been completed).",
+    "link_to_dataset": "https://github.com/Rastion/jobshop_problem/blob/main/instances/ft06.txt",
     "keywords": [
       "job shop",
-      "scheduling",
+      "product-scheduling",
       "Taillard",
       "makespan"
     ],
@@ -28,11 +31,8 @@
       "description": "Minimize the makespan, defined as the maximum completion time over all jobs (each job’s completion time is that of its last activity in its specified processing order)."
     },
     "solution_representation": "A dictionary with key 'jobs_order' mapping to a list of job sequences (one per machine).",
-    "compatible_optimizers": [
-      "genetic_algorithm",
-      "simulated_annealing",
-      "particle_swarm",
-      "tabu_search"
+    "formulations": [
+      ""
     ]
   }
   
